@@ -270,43 +270,43 @@
 //         }         
 //    }
 // }
-
-// }
-// #include<stdio.h>
-// #include<string.h>
-// int main(){
-//     int p, q,a, b;
-//     int one[50][50], two[50][50], res[50][50];
-//     printf("Enter the order of first matrix: ");
-//     scanf ("%d%d", &p,&q);
-//     printf("Enter the order of second  matrix: \n");
-//     scanf("%d %d", &a,&b);
-//     printf("Give terms for first matrix: \n");
-//     for(int m = 0;m<p;m++){
-//         for(int n=0;n<q;n++){
-//             scanf("%d",&one[m][n]);
-//         }
-//     }
-//     printf("Give terms for second matrix: \n");
-//     for(int m = 0;m<a;m++){
-//         for(int n=0;n<b;n++){
-//             scanf("%d",&two[m][n]);
-//         }
-//     }
-//     for(int t=0;t<p; t++){
-//         for(int s =0;s<b;s++){
-//             res[t][s]= 0;
-//             for(int k=0;k<q;k++){
-//                 res[t][s] += one[t][k] * two[k][s];
-//             }
-//         }
-//     }
-//     for(int i=0;i<p;i++){
-//         for(int j=0;j<b;j++){
-//             printf("%d", res[i][j]);
-//         }
-//     }
-//     return 0;
+ 
+ #include<stdio.h>
+ #include<string.h>
+int main(){
+    int p, q,a, b;
+    int one[50][50], two[50][50], res[50][50];
+    printf("Enter the order of first matrix: ");
+    scanf ("%d%d", &p,&q);
+    printf("Enter the order of second  matrix: \n");
+    scanf("%d %d", &a,&b);
+    printf("Give terms for first matrix: \n");
+    for(int m = 0;m<p;m++){
+        for(int n=0;n<q;n++){
+            scanf("%d",&one[m][n]);
+        }
+    }
+    printf("Give terms for second matrix: \n");
+    for(int m = 0;m<a;m++){
+        for(int n=0;n<b;n++){
+            scanf("%d",&two[m][n]);
+        }
+    }
+    for(int t=0;t<p; t++){
+        for(int s =0;s<b;s++){
+            res[t][s]= 0;
+            for(int k=0;k<q;k++){
+                res[t][s] += one[t][k] * two[k][s];
+            }
+        }
+    }
+    for(int i=0;i<p;i++){
+        for(int j=0;j<b;j++){
+            printf("%d", res[i][j]);
+        }
+    }
+    return 0;
     
-// }
+}
+
 
